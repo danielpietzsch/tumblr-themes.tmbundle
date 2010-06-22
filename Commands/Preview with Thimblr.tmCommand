@@ -11,7 +11,7 @@ require 'uri'
 
 page = STDIN.read
 
-response = Net::HTTP.post_form(URI.parse('http://localhost:4567/preview'),
+response = Net::HTTP.post_form(URI.parse('http://thimblr.heroku.com/preview'),
                               { 'theme_code' =&gt; page, :username =&gt; ENV['TUMBLR_USERNAME'] })
 puts response.body</string>
 	<key>input</key>
